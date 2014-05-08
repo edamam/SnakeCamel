@@ -32,14 +32,14 @@ public class SnakeCamelUtil {
 	static String capitalize(String s) {
 		char first = s.charAt(0);
 		char upperFirst = Character.toUpperCase(first);
-		String rest = s.substring(1);
+		String rest = s.substring(1,s.length()-1);
 		return upperFirst + rest;
 	}
 
 	static String uncapitalize(String s) {
 		char first = s.charAt(0);
 		char lowerFirst = Character.toLowerCase(first);
-		String rest = s.substring(1);
+		String rest = s.substring(1,s.length()-1);
 		return lowerFirst + rest;
 	}
 }
